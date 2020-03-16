@@ -208,7 +208,7 @@ class InstallerController extends CController
         if (!$sessionWritable) {
             // For recheck, try to set the value again
             $session['saveCheck'] = 'save';
-            $bProceed = false;
+            $bProceed = true;
         }
 
         // after all check, if flag value is true, show next button and sabe step2 status.
